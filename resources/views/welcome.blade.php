@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>F_CO</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <!-- Add Firebase products that you want to use -->
     {{--<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>--}}
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap.min.js"></script>
 </head>
 
 <body class="nav-md" style="-moz-transform: scale(0.9, 0.9);zoom: 0.9;zoom: 96%;">
@@ -50,7 +47,6 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('.dt_table').DataTable();
         const firebaseConfig = {
             apiKey: "AIzaSyAnRnx7c6CD7-rA_erIJXScSLoGYDXHhZk",
             authDomain: "f-co-507ef.firebaseapp.com",
