@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>F_CO</title>
-    <link href="{{asset('assets/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <!-- Add Firebase products that you want to use -->
@@ -46,20 +46,7 @@
         <!-- /page content -->
     </div>
 </div>
-<script src="{{asset('assets/jquery/dist/jquery.min.js')}}"></script>
-<script src="{{asset('assets/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-buttons/js/dataTables.buttons.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-buttons-bs/js/buttons.bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-buttons/js/buttons.flash.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-buttons/js/buttons.html5.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-buttons/js/buttons.print.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-keytable/js/dataTables.keyTable.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('assets/datatables.net-responsive-bs/js/responsive.bootstrap.js')}}"></script>
-<script src="{{asset('assets/datatables.net-scroller/js/dataTables.scroller.min.js')}}"></script>
+<script src="{{asset('https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap.min.js')}}"></script>
 <script src="{{asset('js/f_co.js')}}"></script>
 </body>
 </html>
