@@ -32,7 +32,7 @@ Route::get('/download', function (Request $request) {
 // Save the variable as `google.html` file onto
 // your local drive, most probably at `your_laravel_project/storage/app/`
 // path (as per default Laravel storage config)
-    Storage::disk('local')->put('blah.pdf', $contents);
+    Storage::disk('public')->put('blah.pdf', $contents);
 //
 // -- Here your have saved the file from the URL
 // -- to your local Laravel storage folder on your server.
@@ -44,7 +44,7 @@ Route::get('/download', function (Request $request) {
 // that instructs the browser to download the file at client side:
 //
 // Get the file path within you local filesystem
-    $path = storage_path('app/blah.pdf');
+    $path = public_path('app/public/blah.pdf');
 
 // Return HTTP response to a client that initiates the file download
     return response()->download($path);
