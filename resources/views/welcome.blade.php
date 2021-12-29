@@ -45,7 +45,9 @@
         <!-- /page content -->
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     $(document).ready(function () {
         const firebaseConfig = {
@@ -83,6 +85,15 @@
                     },
                     timeout: 8000
                 })
+
+                // This can be downloaded directly:
+                // var xhr = new XMLHttpRequest();
+                // xhr.responseType = 'blob';
+                // xhr.onload = (event) => {
+                //     var blob = xhr.response;
+                // };
+                // xhr.open('GET', url);
+                // xhr.send();
 
             })
     }
